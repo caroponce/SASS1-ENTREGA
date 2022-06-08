@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*BODY*/
+body {
+  background-color: #f6f6f6;
+  color: #423d3d;
+  font-family: "Red Hat Text", sans-serif; }
+
+/* TERMINA BODY */
+/*HEADER*/
+header {
+  width: 100%;
+  top: 0;
+  z-index: 1; }
+
+.nav-style {
+  background-color: #80847693; }
+
+.link {
+  font-size: 20px;
+  color: #f6f6f6;
+  margin: 0 50px 0 50px; }
+
+.foto-logo {
+  height: 65px;
+  width: 110px;
+  margin-left: 110px; }
+
+/* FIN HEADER*/
+/*INICIO MAIN*/
+.main-main {
+  margin-top: 85px; }
+
+.main-index {
+  margin-top: 0; }
+
+/*FIN MAIN*/
+/*INDEX*/
+.video-vinedo {
+  height: 100%;
+  width: 100%; }
+
+.imagen-mobile {
+  display: none; }
+
+.foto-frase {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(../MULTIMEDIA/IMAGENES/montanas2.png);
+  background-repeat: initial; }
+
+.frase-bodega {
+  color: #423d3d;
+  font-size: 2rem;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 200px; }
+
+/*MEDIA DE INDEX*/
+@media screen and (max-width: 576px) {
+  .video-vinedo {
+    display: none; }
+  .imagen-mobile {
+    display: block;
+    width: 100%; }
+  .frase-bodega {
+    font-size: 1.1rem;
+    padding-bottom: 90px; } }
+
+/*FIN MEDIA DE INDEX*/
+/* FIN INDEX*/
+/* PRODCUTOS*/
+.nuestros-vinos {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  margin-top: 120px;
+  align-items: center;
+  color: #423d3d;
+  border: 2px solid black; }
+
+.grid-conteiner {
+  display: grid;
+  grid-template-columns: 0.8fr 0.5fr 0.8fr;
+  grid-template-rows: repeat(6, 6fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; }
+
+.pergamino-grid {
+  grid-area: 1 / 1 / 2 / 2; }
+
+.perga-text-grid {
+  grid-area: 1 / 2 / 2 / 4; }
+
+.malbec-text-grid {
+  grid-area: 2 / 1 / 3 / 3;
+  border: 1px solid #808476; }
+
+.malbec-grid {
+  grid-area: 2 / 3 / 3 / 4;
+  border: 1px solid #808476; }
+
+.cabernet-grid {
+  grid-area: 3 / 1 / 4 / 2; }
+
+.cab-text-grid {
+  grid-area: 3 / 2 / 4 / 4; }
+
+.blend-text-grid {
+  grid-area: 4 / 1 / 5 / 3;
+  border: 1px solid #808476; }
+
+.blend-grid {
+  grid-area: 4 / 3 / 5 / 4;
+  border: 1px solid #808476; }
+
+.astral-grid {
+  grid-area: 5 / 1 / 6 / 2; }
+
+.astral-text-grid {
+  grid-area: 5 / 2 / 6 / 4; }
+
+.ser-text-grid {
+  grid-area: 6 / 1 / 7 / 3;
+  border: 1px solid #808476; }
+
+.ser-grid {
+  grid-area: 6 / 3 / 7 / 4;
+  border: 1px solid #808476; }
+
+.titulo-vino {
+  font-size: 2.3rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  padding-top: 10px; }
+
+.detalle-descripcion {
+  display: flex;
+  justify-content: center; }
+
+.texto-des {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 44px;
+  font-size: 30px; }
+
+.texto {
+  font-size: 20px; }
+
+.vino-izq {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  background-image: url(../MULTIMEDIA/IMAGENES/lineasnegras3.png);
+  background-repeat: no-repeat; }
+
+.vino-derecha {
+  background-color: #808476;
+  display: flex;
+  justify-content: center;
+  background-image: url(../MULTIMEDIA/IMAGENES/lineasnegras1.png);
+  background-repeat: no-repeat; }
+
+.texto-der {
+  background-color: #f6f6f6;
+  color: #423d3d;
+  padding-left: 30px;
+  padding-right: 10px;
+  text-align: justify;
+  font-size: 20px; }
+
+.texto-izq {
+  background-color: #808476;
+  color: #423d3d;
+  padding-left: 30px;
+  padding-right: 10px;
+  text-align: justify;
+  font-size: 20px; }
+
+.encabezado-premios {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  background-color: white; }
+
+.carta-premios {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px; }
+
+.premios-productos {
+  background-image: url(../MULTIMEDIA/IMAGENES/hojas-verdes.jpg); }
+
+/*MEDIA DE PRODUCTOS*/
+@media screen and (max-width: 576px) {
+  .vino-izq {
+    width: 100%;
+    height: 500px; }
+  .vino-derecha {
+    width: 100%;
+    height: 500px;
+    margin-top: 0; }
+  .texto-des {
+    margin: 0; }
+  .titulo-vino {
+    font-size: 1.5rem;
+    padding-top: 0px; }
+  .texto {
+    font-size: 1rem;
+    text-align: start; } }
+
+@media screen and (max-width: 768px) {
+  .grid-conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.6fr 1fr 0.6fr 1fr 0.6fr 1fr 0.6fr 1fr 0.6fr 1fr 0.6fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; }
+  .pergamino-grid {
+    grid-area: 1 / 1 / 2 / 2; }
+  .perga-text-grid {
+    grid-area: 2 / 1 / 3 / 2; }
+  .malbec-grid {
+    grid-area: 3 / 1 / 4 / 2; }
+  .malbec-text-grid {
+    grid-area: 4 / 1 / 5 / 2; }
+  .cabernet-grid {
+    grid-area: 5 / 1 / 6 / 2; }
+  .cab-text-grid {
+    grid-area: 6 / 1 / 7 / 2; }
+  .blend-grid {
+    grid-area: 7 / 1 / 8 / 2; }
+  .blend-text-grid {
+    grid-area: 8 / 1 / 9 / 2; }
+  .astral-grid {
+    grid-area: 9 / 1 / 10 / 2; }
+  .astral-text-grid {
+    grid-area: 10 / 1 / 11 / 2; }
+  .ser-grid {
+    grid-area: 11 / 1 / 12 / 2; }
+  .ser-text-grid {
+    grid-area: 12 / 1 / 13 / 2; }
+  .texto-des {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+  .titulo-vino {
+    font-size: 2rem; } }
+
+/* FINMEDIA DE PRODUCTOS*/
+/*FIN PRODUCOS*/
+/*INICIO HISTORIA*/
+.titulo-historia {
+  color: #423d3d;
+  text-decoration-line: underline;
+  font-size: 50px;
+  margin-left: 25px;
+  padding-bottom: 40px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center; }
+
+.historia-familia {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 17px; }
+
+.imagen-familia {
+  margin-bottom: 55px; }
+
+.cuerpo-historia {
+  display: flex;
+  justify-content: space-evenly; }
+
+.familia-mobile {
+  display: none; }
+
+/*MEDIA HISTORIA*/
+@media screen and (max-width: 576px) {
+  .historia-familia {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding-top: 42px;
+    font-size: 1rem; }
+  .titulo-historia {
+    font-size: 2rem;
+    padding-bottom: 0; } }
+
+@media screen and (max-width: 768px) {
+  .familia-mobile {
+    display: block;
+    border: 1px solid black; }
+  .imagen-familia {
+    display: none; }
+  .cuerpo-historia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    margin-bottom: -130px; }
+  .titulo-historia {
+    grid-area: 1 / 1 / 2 / 2; }
+  .familia-mobile {
+    grid-area: 2 / 1 / 3 / 2; }
+  .historia-familia {
+    grid-area: 3 / 1 / 4 / 2; }
+  .historia-familia {
+    padding-top: 30px; } }
+
+/*FIN MEDIA FAMILIA*/
+/*FIN HISTORIA*/
+/*INICIO BODEGA*/
+.encabezado-bodega {
+  color: #423d3d;
+  text-decoration-line: underline;
+  font-size: 43px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+  margin-top: 110px; }
+
+.texto-bodega {
+  font-size: 20px;
+  color: #272525;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6; }
+
+.main-bodega {
+  background-image: url(../MULTIMEDIA/IMAGENES/hojas.png);
+  margin-top: 100px;
+  margin-bottom: 40px; }
+
+.img-carousel {
+  width: 100%;
+  height: 100%; }
+
+/*MEDIA BODEGA*/
+@media screen and (max-width: 576px) {
+  .texto-bodega {
+    display: none; }
+  .encabezado-bodega {
+    font-size: 1.2rem; }
+  .img-carousel {
+    width: 170%;
+    height: 170%; } }
+
+@media screen and (max-width: 768px) {
+  .encabezado-bodega {
+    font-size: 1.5rem; } }
+
+/*FIN MEDIA BODEGA*/
+/*FIN BODEGA*/
+/*INICIO CONTACTOS*/
+.body-contacto {
+  background-image: url(../MULTIMEDIA/IMAGENES/grape.png); }
+
+.cuerpo-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px; }
+
+.datos-contactos {
+  margin-bottom: 130px;
+  text-align: center;
+  background-color: #f6f6f6;
+  width: 40%;
+  height: 40%;
+  border: 1px solid black; }
+
+.contactate {
+  font-size: 2rem;
+  margin-bottom: 20px; }
+
+.visitanos {
+  font-size: 2rem;
+  margin-top: 40px; }
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+  margin-bottom: 40px; }
+
+/*MEDIA CONTACTO*/
+@media screen and (max-width: 576px) {
+  .datos-contactos {
+    width: 60%;
+    height: 60%; } }
+
+@media screen and (max-width: 768px) {
+  .texto-contacto {
+    font-size: 0.9rem; } }
+
+/* FIN MEDIA CONTACTO*/
+/*FIN CONTACTOS*/
+/*INICIO FOOTER*/
+footer {
+  margin-top: 30px;
+  background-color: #f6f6f6; }
+
+footer a img {
+  height: 70px;
+  right: 70px; }
+
+footer p {
+  font-size: 0.8rem;
+  text-align: center; }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.logo-redes:hover {
+  transform: scale(1.5); }
+
+.logo-redes {
+  transition: all 1.4s; }
+
+/*FIN FOOTER*/
